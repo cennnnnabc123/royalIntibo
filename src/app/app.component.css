@@ -1,0 +1,50 @@
+@import 'page.css';
+@import 'en_style.css';
+@import 'bootstrap.css';
+
+.cards {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+    height: 100vh;
+    /* 讓卡片撐滿整個視窗 */
+}
+
+.container {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    will-change: transform, filter;
+}
+
+.following-content {
+    height: 100vh;
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    /* position: relative; */
+}
+
+.black {
+    background-color: black;
+}
