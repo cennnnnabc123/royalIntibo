@@ -31,11 +31,14 @@
 @media (max-width: 768px) {
     .cards {
         position: relative;
-        width: 70% !important;
+        width: 100% !important;
         margin: 0 auto;
     }
+    .contactArea .w50.bsHour{
+        padding: 20px;
+    }
     .f20 {
-        font-size: 16.5px !important;
+        font-size: 16px !important;
     }
     .card .img1 {
         content: url('src/assets/images/str01.jpg');
