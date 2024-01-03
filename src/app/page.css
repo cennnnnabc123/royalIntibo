@@ -157,7 +157,7 @@ body{
 }
 
 .contactArea .w50.bsHour{
-	height: 380px;
+	/* height: 380px; */
 	padding: 50px;
 }
 .contactArea .w50.borderRight1px{
@@ -289,7 +289,7 @@ body{
 		font-size: 26px;
 	}
 	.contactArea .w50.bsHour{
-		padding: 30px;
+		/* padding: 30px; */
 	}
 	.mapIframe{
 		width: 550px;

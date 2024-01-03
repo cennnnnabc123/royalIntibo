@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 })
 export class AppComponent implements OnInit {
   title = 'royalIntibo';
+  isMB: boolean = true;
 
   // ngOnInit() {
   //   gsap.registerPlugin(ScrollTrigger);
@@ -46,7 +47,26 @@ export class AppComponent implements OnInit {
   //   });
   // }
 
+  handleMediaChange(mediaQuery: MediaQueryList): void {
+    if (mediaQuery.matches) {
+      // 如果媒體尺寸小於或等於 768px
+      this.isMB = false;
+      console.warn(",,,,,",this.isMB)
+    } else {
+      // 如果媒體尺寸大於 768px
+      this.isMB = true;
+      console.warn(",,,,,",this.isMB)
+    }
+  }
+
   ngOnInit() {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    this.handleMediaChange(mediaQuery); // 確保在初始化時進行一次檢查
+
+    // 監聽媒體尺寸變化
+    mediaQuery.addEventListener('change', (e) => {
+      this.handleMediaChange(e.currentTarget as MediaQueryList);
+    });
     gsap.registerPlugin(ScrollTrigger);
   
     let cards = gsap.utils.toArray(".card");

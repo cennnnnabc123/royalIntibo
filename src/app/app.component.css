@@ -2,6 +2,67 @@
 @import 'en_style.css';
 @import 'bootstrap.css';
 
+@media (min-width: 769px) {
+    .card .img1 {
+        content: url('src/assets/images/1.JPG');
+    }
+
+    .card .img2 {
+        content: url('src/assets/images/2.JPG');
+    }
+
+    .card .img3 {
+        content: url('src/assets/images/3.JPG');
+    }
+
+    .card .img4 {
+        content: url('src/assets/images/4.JPG');
+    }
+
+    .card .img5 {
+        content: url('src/assets/images/IMG_3169.JPG');
+    }
+
+    .card .img6 {
+        content: url('src/assets/images/6.JPG');
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        position: relative;
+        width: 70% !important;
+        margin: 0 auto;
+    }
+    .f20 {
+        font-size: 16.5px !important;
+    }
+    .card .img1 {
+        content: url('src/assets/images/str01.jpg');
+    }
+
+    .card .img2 {
+        content: url('src/assets/images/str02.jpg');
+    }
+
+    .card .img3 {
+        content: url('src/assets/images/str03.jpg');
+    }
+
+    .card .img4 {
+        content: url('src/assets/images/str04.jpg');
+    }
+
+    .card .img5 {
+        content: url('src/assets/images/str05.jpg');
+    }
+
+    .card .img6 {
+        content: url('src/assets/images/str06.jpg');
+    }
+}
+
+
 .cards {
     position: relative;
     width: 90%;
@@ -45,6 +106,6 @@ img {
     /* position: relative; */
 }
 
-.black {
+.bgblack {
     background-color: black;
 }
